@@ -1,6 +1,8 @@
 import React from 'react';
 import ThemeSection from './sections/ThemeSection';
 
+import CursorComponent from './components/CursorComponent';
+
 import imgGameOfThrones from '../assets/images/gameOfThrones_background.jpg';
 import imgLesVisiteurs from '../assets/images/lesVisiteurs_background.jpg';
 import imgHarryPotter from '../assets/images/harryPotter_background.jpg';
@@ -22,6 +24,8 @@ class App extends React.Component {
         <ThemeSection key="3" title="Hunger Games" image={imgHungerGames}/>
         <ThemeSection key="4" title="Marvel" image={imgMarvel}/>
         <ThemeSection key="5" title="Breaking Bad" image={imgBreakingBad}/>
+
+        <CursorComponent />
       </section>
     )
   }

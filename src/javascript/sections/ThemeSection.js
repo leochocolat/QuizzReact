@@ -9,9 +9,15 @@ class ThemeSection extends React.Component {
         }
     }
 
+    clickHandler() {
+        // got to route
+        console.log(this.props.title);
+    }
+
     render() {
         return (
-            <section className='section-theme'  style={this.sectionStyle}>
+            <section className='section-theme' style={this.sectionStyle} onClick={() => this.clickHandler()}>
+                <div className="section-theme__layer"></div>
                 <h1 className="section-theme__title">
                     {this.props.title}
                 </h1>

@@ -1,0 +1,23 @@
+.cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    margin-left: -40px;
+    margin-top: -40px;
+
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    text-align: center;
+    line-height: 80px;
+    
+    font-family: $sackers;
+    text-transform: lowercase;
+
+    pointer-events: none;
+}
