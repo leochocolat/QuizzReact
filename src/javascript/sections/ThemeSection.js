@@ -18,7 +18,8 @@ class ThemeSection extends React.Component {
 
     render() {
         return (
-            <section className='section-theme' onClick={() => this.clickHandler()} style={this.sectionStyle}>
+            <section className='section-theme' onClick={() => this.clickHandler()}>
+                <div className='section-theme__background-wrapper' style={this.sectionStyle}></div>
                 <h1 className="section-theme__title">
                     {this.props.title}
                 </h1>
