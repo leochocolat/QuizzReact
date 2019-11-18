@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 class ThemeSection extends React.Component {
     constructor(props) {
@@ -13,15 +14,17 @@ class ThemeSection extends React.Component {
 
     render() {
         return (
-            <section className='section-theme' style={this.sectionStyle}>
-                <h1 className="section-theme__title">
-                    {this.props.title}
-                </h1>
-            </section>
+            <NavLink to={`/quizz/${this.props.id}`}>
+                <section className='section-theme' style={this.sectionStyle}>
+                    <h1 className="section-theme__title">
+                        {this.props.title}
+                    </h1>
+                </section>
+            </NavLink>
         )
     }
 
-    
+
 }
 
 export default ThemeSection;

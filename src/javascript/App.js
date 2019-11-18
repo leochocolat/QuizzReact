@@ -1,16 +1,18 @@
-import React from 'react';
-import ThemeSection from './sections/ThemeSection';
-import themeData from '../assets/data/themeData.json';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import React, { Suspense, lazy } from 'react';
 
-class App extends React.Component {
+const Home = lazy(() => import('./pages/Home'));
+const Quizz = lazy(() => import('./pages/Quizz'));
 
-  render() {
-    return (
-      <section>
-        {themeData.map((theme, index) => <ThemeSection key={index} {...theme} />)}
-      </section>
-    )
-  }
-}
+const App = () => (
+  <Router>
+    <Suspense fallback={<div>Chargement...</div>}>
+      <Switch>
+        <Route exact path="/" component={Home}/>
+        <Route path="/quizz/:quizzId" component={Quizz}/>
+      </Switch>
+    </Suspense>
+  </Router>
+);
 
 export default App;
