@@ -10,12 +10,17 @@ class CursorComponent extends React.Component {
             mouseY: 0,
         };
 
+        this.tweenObj = {
+            opacity: 0
+        }
+
         this.setup();
     }
 
     render() {
         const style = {
-            transform: `translate(${this.state.mouseX}px, ${this.state.mouseY}px)` 
+            transform: `translate(${this.state.mouseX}px, ${this.state.mouseY}px)`,
+            opacity: this.state.opacity
         }
             
         return (
@@ -34,9 +39,11 @@ class CursorComponent extends React.Component {
     }
 
     mousemoveHandler(e) {
+        TweenLite.to(this.tweenObj, .5, { opacity: 1 });
         this.setState({
             mouseX: e.clientX,
             mouseY: e.clientY,
+            opacity: this.tweenObj.opacity
         });
     }
 }
