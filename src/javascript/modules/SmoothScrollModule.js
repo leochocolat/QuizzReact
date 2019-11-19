@@ -1,19 +1,37 @@
 import LocomotiveScroll from 'locomotive-scroll';
+import AnimTitleModule from './AnimTitleModule';
+import AnimBackgroundModule from './AnimBackgroundModule';
 
 class SmoothScrollModule {
     constructor(el) {
         this.el = el;
 
         this.ui = {
+            animTitle: document.querySelectorAll('[data-scroll-call="anim-title"]'),
+            animBackground: document.querySelectorAll('[data-scroll-call="anim-background"]'),
+        }
 
+        this.components = {
+            animTitle: [],
+            animBackground: [],
         }
 
         this.setup();
     }
 
     setup() {
+        this.setupComponents();
         this.setupSmoothScroll();
         this.setupEventListeners();
+    }
+
+    setupComponents() {
+        // for (let i = 0; i < this.ui.animTitle.length; i++) {
+        //     this.components.animTitle.push(new AnimTitleModule(this.ui.animTitle[i]));
+        // }
+        for (let i = 0; i < this.ui.animBackground.length; i++) {
+            this.components.animBackground.push(new AnimBackgroundModule(this.ui.animBackground[i]));
+        }
     }
 
     setupSmoothScroll() {
@@ -25,23 +43,25 @@ class SmoothScrollModule {
         });
     }
 
-    update() {
-        this.scroll.init();
-        this.scroll.start();
-    } 
-
     setupEventListeners() {
         this.scroll.on('scroll', (e) => this.onScrollHandler(e));
-        this.scroll.on('call', (e) => this.onCallHandler(e));
+        this.scroll.on('call', (e, state, object) => this.onCallHandler(e, state, object));
     }
 
     onScrollHandler(e) {
-        console.log(e);
     }
 
-    onCallHandler(e) {
-        console.log(e);
+    onCallHandler(e, state, object) {
+        if (e === 'anim-title') {
+            let animTitle = new AnimTitleModule(object.el);
+            this.components.animTitle.push(animTitle);
+        }
     }
+
+    reset() {
+        this.scroll.init();
+        this.scroll.start();
+    } 
 
 }
 

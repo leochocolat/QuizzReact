@@ -1,0 +1,38 @@
+.page-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    height: 100vh;
+
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin: auto;
+    outline: none;
+}
+
+.page-login__label {
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.page-login__input {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    font-family: $sackers;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: lowercase;
+
+    border: none
+}
+
+.page-login__submit {
+    visibility: hidden;
+}
