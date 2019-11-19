@@ -1,18 +1,25 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import ThemeContext from '../provider/ThemeContext';
 
-class Quizz extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+const Quizz = (props) => {
 
-  render() {
-    return (
-      <section>
-        <h1>QUIZZ</h1>
-        <p>id : {this.props.match.params.quizzId}</p>
-      </section>
-    )
-  }
+  const id = props.match.params.quizzId;
+  const state = React.useContext(ThemeContext)
+
+  useEffect(() => {
+      state.setTheme(id)
+    return () => state.resetTheme()
+  }, [id])
+
+  const themeInfos = state.getThemeInfos(id);
+
+  return (
+        
+        <section>
+          <h1>QUIZZ : {themeInfos.title}</h1>
+          <p>{state.json && state.json.quizz.débutant[3].question}</p>
+        </section>
+  )
+
 }
-
 export default Quizz;

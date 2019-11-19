@@ -3,48 +3,48 @@
         "id": "0",
         "title": "Breaking Bad",
         "image": "breakingBad_background.jpg",
-        "json": "breaking-bad.json"
+        "json": "breaking-bad"
     },
     {
         "id": "1",
         "title": "Game of Thrones",
         "image": "gameOfThrones_background.jpg",
-        "json": "game-of-thrones.json"
+        "json": "game-of-thrones"
     },
     {
         "id": "2",
         "title": "Star Wars",
         "image": "starWars_background.jpg",
-        "json": "star-wars.json"
+        "json": "star-wars"
     },
     {
         "id": "3",
         "title": "Jurassic Park",
         "image": "jurassicPark_background.jpg",
-        "json": "jurassic-park.json"
+        "json": "jurassic-park"
     },
     {
         "id": "4",
         "title": "Hunger Games",
         "image": "hungerGames_background.jpg",
-        "json": "hunger-games.json"
+        "json": "hunger-games"
     },
     {
         "id": "5",
         "title": "Films Marvel",
         "image": "marvel_background.jpg",
-        "json": "marvel.json"
+        "json": "marvel"
     },
     {
         "id": "6",
         "title": "Le cinquième élément",
         "image": "fifthElement_background.jpg",
-        "json": "fifth-element.json"
+        "json": "fifth-element"
     },
     {
         "id": "7",
         "title": "Princesses Disney",
         "image": "princessesDisney_background.jpg",
-        "json": "princesses-disney.json"
+        "json": "princesses-disney"
     }
 ]
