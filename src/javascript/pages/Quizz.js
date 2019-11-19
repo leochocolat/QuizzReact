@@ -4,7 +4,9 @@ import ThemeContext from '../provider/ThemeContext';
 const Quizz = (props) => {
 
   const id = props.match.params.quizzId;
-  const state = React.useContext(ThemeContext)
+  const state = React.useContext(ThemeContext);
+
+  const pathToAssets = require.context(`../../assets/images/`, true);
 
   useEffect(() => {
       state.setTheme(id)
@@ -13,33 +15,26 @@ const Quizz = (props) => {
 
   const themeInfos = state.getThemeInfos(id);
 
+  const style = {
+    backgroundImage: `url(${state.themeList[id].image})`,
+    backgroundImage: `url(${pathToAssets(`./${state.themeList[id].image}`)})`,
+  }
+
   return (
     <section className="page-quizz">
-    <header className="header-quizz">
+    <header className="header-quizz" style={style}>
       <h1 className="header-quizz__heading">Question 1</h1>
     </header>
     <section className="section-question">
+      <h2 className="section-question__subheading">{themeInfos.title}</h2>
       <div className="section-question__question">
-        <p>{themeInfos.title}</p>
-        Quel animal apparaît sur le blason des Lannister ?
-        <p>{state.json && state.json.quizz.débutant[3].question}</p>
+        <p>{state.json && state.json.quizz.débutant[0].question}</p>
       </div>
       <ul className="section-question__list-response">
-        <li className="section-question__list-response-item">
-          Un cheval
-        </li>
-        <li className="section-question__list-response-item">
-          Un ours
-        </li>
-        <li className="section-question__list-response-item">
-          Un lion
-        </li>
-        <li className="section-question__list-response-item">
-          Un aigle
-        </li>
+        {state.json && state.json.quizz.débutant[0].propositions.map((response, index) => <li className="section-question__list-response-item" key={index}>{response}</li>)}  
       </ul>
       <div className="section-question__progress">
-        1/10
+        {state.json && state.json.quizz.débutant[0].id}/10
       </div>
       <button className="section-question__leave-button">Quitter</button>
     </section>

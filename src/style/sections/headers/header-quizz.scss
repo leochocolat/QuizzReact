@@ -1,16 +1,17 @@
 .header-quizz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     height: 35%;
     width: 100%;
 
-
-    background-image: url('https://picsum.photos/seed/picsum/1920/500');
     background-position: center;
     background-size: cover;
 }
 
 .header-quizz__heading {
-    padding-top: 50px;
-
     color: white;
 
     text-align: center;

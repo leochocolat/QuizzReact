@@ -14,14 +14,14 @@ class Login extends React.Component {
   }
 
   handleChange(e) {
-      this.setState({
-          value: e.target.value
-      });
+    this.setState({
+        value: e.target.value
+    });
   }
 
   handleSubmit(e) {
-        console.log(e);
-        e.preventDefault();
+    
+    e.preventDefault();
   }
 
   render() {
