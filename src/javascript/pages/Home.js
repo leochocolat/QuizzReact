@@ -15,8 +15,9 @@ export default class Home extends React.Component {
   render() {
     return (
       <ThemeContext.Consumer>
-        {({themeList}) => (
+        {({username, themeList}) => (
           <section className="js-scroll-container">
+            <p>{username}</p>
             {themeList.map((theme, index) => <ThemeSection key={index} {...theme} />)}
             <CursorComponent />
           </section>

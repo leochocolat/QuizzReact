@@ -4,20 +4,19 @@ import ThemeContext from '../provider/ThemeContext';
 const Quizz = (props) => {
 
   const id = props.match.params.quizzId;
-  const state = React.useContext(ThemeContext);
-
+  const context = React.useContext(ThemeContext)
   const pathToAssets = require.context(`../../assets/images/`, true);
-
+  
   useEffect(() => {
-      state.setTheme(id)
-    return () => state.resetTheme()
+      context.setTheme(id)
+    return () => context.resetTheme()
   }, [id])
 
-  const themeInfos = state.getThemeInfos(id);
+  const themeInfos = context.getThemeInfos(id);
 
   const style = {
-    backgroundImage: `url(${state.themeList[id].image})`,
-    backgroundImage: `url(${pathToAssets(`./${state.themeList[id].image}`)})`,
+    backgroundImage: `url(${context.themeList[id].image})`,
+    backgroundImage: `url(${pathToAssets(`./${context.themeList[id].image}`)})`,
   }
 
   return (
@@ -28,13 +27,13 @@ const Quizz = (props) => {
     <section className="section-question">
       <h2 className="section-question__subheading">{themeInfos.title}</h2>
       <div className="section-question__question">
-        <p>{state.json && state.json.quizz.débutant[0].question}</p>
+        <p>{context.json && context.json.quizz.débutant[0].question}</p>
       </div>
       <ul className="section-question__list-response">
-        {state.json && state.json.quizz.débutant[0].propositions.map((response, index) => <li className="section-question__list-response-item" key={index}>{response}</li>)}  
+        {context.json && context.json.quizz.débutant[0].propositions.map((response, index) => <li className="section-question__list-response-item" key={index}>{response}</li>)}  
       </ul>
       <div className="section-question__progress">
-        {state.json && state.json.quizz.débutant[0].id}/10
+        {context.json && context.json.quizz.débutant[0].id}/10
       </div>
       <button className="section-question__leave-button">Quitter</button>
     </section>

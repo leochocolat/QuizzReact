@@ -17,12 +17,18 @@ export default class ThemeProvider extends React.Component {
         super(props);
         
         this.state = {
+            username : null,
+            setUsername : this.setUsername,
             themeList : themeData,
             setTheme : this.getTheme,
             resetTheme: () => this.setState({json: null}),
             getThemeInfos: this.getThemeInfos,
             json : null
         }
+    }
+
+    setUsername = (name) => {
+        this.setState({username : name});
     }
 
     getThemeInfos = (id) => {

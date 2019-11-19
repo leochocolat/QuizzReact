@@ -1,42 +1,26 @@
 import React from 'react';
+import ThemeContext from '../provider/ThemeContext';
 
-class Login extends React.Component {
-    constructor(props) {
-        super(props);
+const Login = () => {
 
-        this.state = {
-            value: ''
-        }
-    }
+  const context = React.useContext(ThemeContext);
+  const [value, setValue] = React.useState('');
 
-  componentDidMount() {
-    
+  function handleChange(e) {
+    setValue(e.target.value)
   }
-
-  handleChange(e) {
-    this.setState({
-        value: e.target.value
-    });
-  }
-
-  handleSubmit(e) {
-    
-    e.preventDefault();
-  }
-
-  render() {
-    return (
-      <section className="page-login">
-        <form onSubmit={this.handleSubmit}>
-            <label className="page-login__label">
-            Enter username to begin
-            <input className="page-login__input" type="text" placeholder='username' value={this.state.value} onChange={(e) => this.handleChange(e)} />
-            </label>
-            <input className="page-login__submit" type="submit" value="Envoyer" onSubmit={(e) => this.handleSubmit(e)} />
-        </form>
-      </section>
-    )
-  }
+  
+  return (
+    <section className="page-login">
+      <form onSubmit={() => context.setUsername(value)}>
+          <label className="page-login__label">
+          Enter username to begin
+          <input className="page-login__input" type="text" placeholder='username' value={value} onChange={(e) => handleChange(e)} />
+          </label>
+          <input className="page-login__submit" type="submit" value="Envoyer" />
+      </form>
+    </section>
+  )
 }
 
 export default Login;
