@@ -1,10 +1,9 @@
 import React from 'react';
 import ThemeSection from '../sections/ThemeSection';
 import themeData from '../../assets/data/themeData.json';
-import CursorComponent from './components/CursorComponent';
+import CursorComponent from '../components/CursorComponent';
 
 class Home extends React.Component {
-
   render() {
     return (
       <section>

@@ -21,11 +21,10 @@ class ThemeSection extends React.Component {
         return (
             <NavLink to={`/quizz/${this.props.id}`}>
                 <section className='section-theme' onClick={() => this.clickHandler()}>
-                    <div className='section-theme__background-wrapper' style={this.sectionStyle}>
-                        <h1 className="section-theme__title">
-                            {this.props.title}
-                        </h1>
-                    </div>
+                    <div className='section-theme__background-wrapper' style={this.sectionStyle}></div>
+                    <h1 className="section-theme__title">
+                        {this.props.title}
+                    </h1>
                 </section>
             </NavLink>
         )
