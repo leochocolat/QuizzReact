@@ -4,14 +4,14 @@ import ThemeContext from '../provider/ThemeContext';
 const Quizz = (props) => {
 
   const id = props.match.params.quizzId;
-  const state = React.useContext(ThemeContext)
+  const context = React.useContext(ThemeContext)
 
   useEffect(() => {
-      state.setTheme(id)
-    return () => state.resetTheme()
+      context.setTheme(id)
+    return () => context.resetTheme()
   }, [id])
 
-  const themeInfos = state.getThemeInfos(id);
+  const themeInfos = context.getThemeInfos(id);
 
   return (
     <section className="page-quizz">
@@ -22,7 +22,7 @@ const Quizz = (props) => {
       <div className="section-question__question">
         <p>{themeInfos.title}</p>
         Quel animal apparaît sur le blason des Lannister ?
-        <p>{state.json && state.json.quizz.débutant[3].question}</p>
+        <p>{context.json && context.json.quizz.débutant[3].question}</p>
       </div>
       <ul className="section-question__list-response">
         <li className="section-question__list-response-item">
