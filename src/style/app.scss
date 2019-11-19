@@ -3,7 +3,19 @@
 @import './base/base.scss';
 @import './base/fonts.scss';
 @import './base/variables.scss';
+@import './base/typography.scss';
 
+// PAGES
+@import './pages/page-login.scss';
+@import './pages/page-home.scss';
+@import './pages/page-quizz.scss';
+
+// PARTIALS
 @import './partials/cursor.scss';
 
+// SECTIONS
 @import './sections/section-theme.scss';
+@import './sections/section-question.scss';
+
+// HEADERS
+@import './sections/headers/header-quizz.scss';

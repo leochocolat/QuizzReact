@@ -4,6 +4,7 @@ import ThemeProvider from './provider/ThemeProvider';
 
 const Home = lazy(() => import('./pages/Home'));
 const Quizz = lazy(() => import('./pages/Quizz'));
+// const Login = lazy(() => import('./pages/Login'));
 
 const App = () => (
   <ThemeProvider>

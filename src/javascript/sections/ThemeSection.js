@@ -13,19 +13,17 @@ class ThemeSection extends React.Component {
     }
 
     clickHandler() {
-        // got to route
         console.log(this.props.title);
     }
 
     render() {
         return (
             <NavLink to={`/quizz/${this.props.id}`}>
-                <section className='section-theme' onClick={() => this.clickHandler()}>
-                    <div className='section-theme__background-wrapper' style={this.sectionStyle}>
-                        <h1 className="section-theme__title">
-                            {this.props.title}
-                        </h1>
-                    </div>
+                <section className='section-theme' onClick={() => this.clickHandler()} data-scroll data-scroll-call="anim-background">
+                    <div className='section-theme__background-wrapper js-background-wrapper' style={this.sectionStyle}></div>
+                    <h1 className="section-theme__title" data-scroll data-scroll-speed="1" data-scroll-call="anim-title">
+                        {this.props.title}
+                    </h1>
                 </section>
             </NavLink>
         )
