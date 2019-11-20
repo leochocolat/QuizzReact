@@ -15,7 +15,6 @@ const Quizz = (props) => {
   const themeInfos = context.getThemeInfos(id);
 
   const style = {
-    backgroundImage: `url(${context.themeList[id].image})`,
     backgroundImage: `url(${pathToAssets(`./${context.themeList[id].image}`)})`,
   }
 

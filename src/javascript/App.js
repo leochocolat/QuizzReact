@@ -20,9 +20,9 @@ const App = () => {
           <Route exact path="/login">
               {context.username !== null ?  <Redirect to="/" /> : <Login />}
           </Route>
-          <Route path="/" component={Home}/>
-          <Route path="/login" component={Login}/>
-          <Route path="/quizz/:quizzId" component={Quizz}/>
+          <Route exact path="/" component={Home}/>
+          <Route exact path="/login" component={Login}/>
+          <Route exact path="/quizz/:quizzId" component={Quizz}/>
         </Switch>
       </Suspense>
     </Router>
