@@ -7,6 +7,7 @@ const Login = () => {
   const [value, setValue] = React.useState('');
 
   function handleChange(e) {
+    e.preventDefault();
     setValue(e.target.value)
   }
   
@@ -17,7 +18,7 @@ const Login = () => {
           Enter username to begin
           <input className="page-login__input" type="text" placeholder='username' value={value} onChange={(e) => handleChange(e)} />
           </label>
-          <input className="page-login__submit" type="submit" value="Envoyer" />
+          {/* <input className="page-login__submit" type="submit" value="Envoyer" /> */}
       </form>
     </section>
   )

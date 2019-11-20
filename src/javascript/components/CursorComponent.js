@@ -5,6 +5,8 @@ class CursorComponent extends React.Component {
     constructor(props) {
         super(props);
 
+        this.mousemoveHandler = this.mousemoveHandler.bind(this);
+
         this.state = {
             mouseX: 0,
             mouseY: 0,
@@ -15,6 +17,10 @@ class CursorComponent extends React.Component {
         }
 
         this.setup();
+    }
+
+    componentWillUnmount = () => {
+        this.removeEventListerners();
     }
 
     render() {
@@ -37,7 +43,11 @@ class CursorComponent extends React.Component {
     }
 
     setupEventListeners() {
-        window.addEventListener('mousemove', (e) => this.mousemoveHandler(e))
+        window.addEventListener('mousemove', this.mousemoveHandler)
+    }
+
+    removeEventListerners() {
+        window.removeEventListener('mousemove', this.mousemoveHandler)
     }
 
     mousemoveHandler(e) {

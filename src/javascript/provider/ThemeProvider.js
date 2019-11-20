@@ -20,9 +20,9 @@ export default class ThemeProvider extends React.Component {
             username : null,
             setUsername : this.setUsername,
             themeList : themeData,
-            setTheme : this.getTheme,
+            getTheme: this.getTheme,
+            setTheme : this.getThemeQuestions,
             resetTheme: () => this.setState({json: null}),
-            getThemeInfos: this.getThemeInfos,
             json : null
         }
     }
@@ -31,12 +31,12 @@ export default class ThemeProvider extends React.Component {
         this.setState({username : name});
     }
 
-    getThemeInfos = (id) => {
+    getTheme = (id) => {
         return this.state.themeList.find(theme => theme.id === id);
     }
 
-    getTheme = (id) => {
-        let theme = this.getThemeInfos(id);
+    getThemeQuestions = (id) => {
+        let theme = this.getTheme(id);
 
         switch (theme.json) {
             case 'breaking-bad':

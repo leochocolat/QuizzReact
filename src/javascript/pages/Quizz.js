@@ -8,11 +8,12 @@ const Quizz = (props) => {
   const pathToAssets = require.context(`../../assets/images/`, true);
   
   useEffect(() => {
-      context.setTheme(id)
+    context.setTheme(id)
     return () => context.resetTheme()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id])
 
-  const themeInfos = context.getThemeInfos(id);
+  const theme = context.getTheme(id);
 
   const style = {
     backgroundImage: `url(${pathToAssets(`./${context.themeList[id].image}`)})`,
@@ -24,7 +25,7 @@ const Quizz = (props) => {
       <h1 className="header-quizz__heading">Question 1</h1>
     </header>
     <section className="section-question">
-      <h2 className="section-question__subheading">{themeInfos.title}</h2>
+      <h2 className="section-question__subheading">{theme.title}</h2>
       <div className="section-question__question">
         <p>{context.json && context.json.quizz.débutant[0].question}</p>
       </div>

@@ -1,4 +1,4 @@
-import { TimelineLite, Power0, TweenLite, Power3 } from 'gsap';
+import { TimelineLite, Power3 } from 'gsap';
 
 class AnimTitleModule {
     constructor(el) {
