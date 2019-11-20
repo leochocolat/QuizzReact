@@ -1,9 +1,8 @@
 import React from 'react';
-import ThemeContext from '../provider/ThemeContext';
+import {Context} from '../provider/Provider';
 
 const Login = () => {
 
-  const context = React.useContext(ThemeContext);
   const [value, setValue] = React.useState('');
 
   function handleChange(e) {
@@ -12,15 +11,18 @@ const Login = () => {
   }
   
   return (
-    <section className="page-login">
-      <form onSubmit={() => context.setUsername(value)}>
-          <label className="page-login__label">
-          Enter username to begin
-          <input className="page-login__input" type="text" placeholder='username' value={value} onChange={(e) => handleChange(e)} />
-          </label>
-          {/* <input className="page-login__submit" type="submit" value="Envoyer" /> */}
-      </form>
-    </section>
+    <Context.Consumer>
+      {({dispatch}) => (
+        <section className="page-login">
+          <form onSubmit={() => dispatch({type: 'setUsername', value})}>
+              <label className="page-login__label">
+              Enter username to begin
+              <input className="page-login__input" type="text" placeholder='username' value={value} onChange={(e) => handleChange(e)} />
+              </label>
+          </form>
+        </section>
+      )}
+    </Context.Consumer>
   )
 }
 
