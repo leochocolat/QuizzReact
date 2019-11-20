@@ -41,6 +41,8 @@
     font-weight: 300;
     text-transform: lowercase;
 
+    user-select: none;
+
     &:last-child {
         margin-right: 0
     }
