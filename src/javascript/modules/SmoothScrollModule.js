@@ -26,9 +26,6 @@ class SmoothScrollModule {
     }
 
     setupComponents() {
-        // for (let i = 0; i < this.ui.animTitle.length; i++) {
-        //     this.components.animTitle.push(new AnimTitleModule(this.ui.animTitle[i]));
-        // }
         for (let i = 0; i < this.ui.animBackground.length; i++) {
             this.components.animBackground.push(new AnimBackgroundModule(this.ui.animBackground[i]));
         }
@@ -56,6 +53,11 @@ class SmoothScrollModule {
             let animTitle = new AnimTitleModule(object.el);
             this.components.animTitle.push(animTitle);
         }
+    }
+
+    scrollTo(target) {
+        let el = document.querySelector(target);
+        this.scroll.scrollTo(target);
     }
 
     reset() {

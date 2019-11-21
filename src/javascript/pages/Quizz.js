@@ -4,9 +4,11 @@ import {Context} from '../provider/Provider';
 import DifficultyComponent from '../components/DifficultyComponent';
 
 import TimeModule from '../modules/TimerModule';
+import AnimOpacity from '../modules/AnimOpacity';
+import { TweenLite, Power3 } from 'gsap';
 
 let timeModule;
-const DURATIONMAX = 10;
+const DURATIONMAX = 20;
 
 const Quizz = (props) => {
 
@@ -42,10 +44,19 @@ const Quizz = (props) => {
 
   useEffect(() => {
     if (!context.state.difficulty) return;
-    context.dispatch({type: 'getCurrentTheme', id})
-    context.dispatch({type: 'getCurrentThemeQuestions', id})
-    timeModule = new TimeModule(DURATIONMAX);
-    updateTime();
+
+    context.dispatch({type: 'getCurrentTheme', id});
+    context.dispatch({type: 'getCurrentThemeQuestions', id});
+
+    let header = document.querySelector('.js-header-quizz');
+    new AnimOpacity(document.querySelectorAll('.js-opacity')).transitionIn();
+    TweenLite.to(header, 1, { height: '35%', ease: Power3.easeInOut });
+
+    setTimeout(() => {
+      timeModule = new TimeModule(DURATIONMAX);
+      updateTime();
+    }, 1000);
+    
     return () => context.dispatch({type: 'resetDifficulty'})
   }, [context.state.difficulty]);
 
@@ -60,7 +71,16 @@ const Quizz = (props) => {
     context.dispatch({type: 'setScore', id, points});
     clearInterval(interval);
     setPoints([]);
-    setAllowRedirect(true);
+    
+    let header = document.querySelector('.js-header-quizz');
+    new AnimOpacity(document.querySelectorAll('.js-opacity')).transitionOut();
+    TweenLite.to(header, 1, { height: '100%', ease: Power3.easeInOut });
+
+    setTimeout(() => {
+      setAllowRedirect(true);
+    }, 1000);
+
+
   }, [points.length]);
 
   const verifyResponse = (response) => {
@@ -89,10 +109,10 @@ const Quizz = (props) => {
     <section className="page-quizz">
       {context.state.difficulty ? (
         <React.Fragment>
-          <header className="header-quizz" style={currentTheme && style}>
-            <h1 className="header-quizz__heading">Question {currentThemeQuestion && currentThemeQuestion.quizz[difficulty][questionId].id}</h1>
+          <header className="header-quizz js-header-quizz" style={currentTheme && style}>
+            <h1 className="header-quizz__heading js-opacity">Question {currentThemeQuestion && currentThemeQuestion.quizz[difficulty][questionId].id}</h1>
           </header>
-          <section className="section-question">
+          <section className="section-question js-opacity">
             <div className="section-question__timer js-timer">{duration}</div>
             <h2 className="section-question__subheading">{currentTheme && currentTheme.title}</h2>
             <div className="section-question__question">
@@ -102,7 +122,7 @@ const Quizz = (props) => {
               {currentThemeQuestion && currentThemeQuestion.quizz[difficulty][questionId].propositions.map((response, index) => <li onClick={handleResponse} className="section-question__list-response-item" key={index}>{response}</li>)}
             </ul>
             <div className="section-question__progress">
-              {currentThemeQuestion && currentThemeQuestion.quizz[difficulty][questionId].id}/10
+              {currentThemeQuestion && currentThemeQuestion.quizz[difficulty][questionId].id}/10 - {difficulty}
             </div>
             <NavLink to={`/`}>
               <button className="section-question__leave-button">Quitter</button>
@@ -111,7 +131,7 @@ const Quizz = (props) => {
           </section>
         </React.Fragment>
       ) : (
-        <DifficultyComponent id={id}/>
+        <DifficultyComponent id={id} title={currentTheme && currentTheme.title}/>
       )}
       
       

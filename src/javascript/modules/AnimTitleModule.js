@@ -13,10 +13,12 @@ class AnimTitleModule {
     }
 
     setupSplitText() {
+        this.el.style.overflow = 'hidden';
         let content = this.el.innerHTML;
         this.el.innerHTML = '';
         let span = document.createElement('span');
         this.ui.span = span;
+        span.style.display = 'block';
         span.innerHTML = content;
         this.el.appendChild(span);
     }

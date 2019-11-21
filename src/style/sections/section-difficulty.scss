@@ -8,21 +8,59 @@
     height: 100%;
 
     background-color: #E8E5E1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    color: white;
+}
+
+.section-difficulty__filter {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .section-difficulty__content {
+    margin-top: 100px;
     text-align: center;
     width: 100%;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
 }
 
 .section-difficulty__title {
-    opacity: 0.5;
+    position: relative;
+
     margin-bottom: 50px;
     text-transform: lowercase;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+}
+
+.section-difficulty__subtitle {
+    position: relative;
+
+    margin-top: 100px;
+    text-transform: lowercase;
+    opacity: 0.8;
+    
+    &:before {
+        position: absolute;
+        left: 50%;
+        top: -50px;
+
+        transform: translateX(-50%);
+
+        width: 20px;
+        height: 1px;
+
+        background: rgba(255, 255, 255, 0.5);
+
+        content: ''
+    }
 }
 
 .section-difficulty__button {
@@ -33,10 +71,12 @@
     position: relative;
 
     margin-bottom: 20px;
+    padding: 0;
 
     background: none;
     border: none;
-    color: black;
+    color: white;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
 
     font-family: $sackers;
     font-weight: 300;
@@ -49,25 +89,29 @@
         margin-top: 0
     }
 
-    &:before {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-
-        width: 0;
-        height: 1px;
-
-        background-color: black;
-
-        content: '';
-        transition: width .5s ease-in-out;
+    span {
+        &:before {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+    
+            width: 0;
+            height: 1px;
+    
+            background-color: white;
+    
+            content: '';
+            transition: width .5s ease-in-out;
+        }
     }
 
     &:hover {
         cursor: pointer;
 
-        &:before {
-            width: 100%;
+        span {
+            &:before {
+                width: 100%;
+            }
         }
     }
 }
