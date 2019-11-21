@@ -39,7 +39,7 @@ const Results = (props) => {
     return (
         <section className="page-results">
             <header className="header-results js-header-results" style={style}>
-                <h1 className="header-results__heading js-opacity">Resultats</h1>
+                <h1 className="header-results__heading js-opacity">Resultat</h1>
             </header>
             <section className="section-results js-opacity">
                 <h2 className="section-results__subheading js-anim-title">{currentQuestion && currentQuestion.title}</h2>
