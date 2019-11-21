@@ -34,9 +34,9 @@ const Home = () => {
           <section className="js-scroll-container">
             <div className="page-home__username" data-scroll data-scroll-sticky data-scroll-target=".js-scroll-container">Bonjour {state.username}</div>
             {state.themeList.map((theme, index) => 
-            <section clase onClick={() => handleClick(theme)}>
-              <ThemeSectionComponent key={index} {...theme} />
-            </section>
+              <section clase onClick={() => handleClick(theme)}>
+                <ThemeSectionComponent key={index} {...theme} />
+              </section>
             )}
             <CursorComponent />
             {allowRedirect && <Redirect to={`/quizz/${themeId}`} />}
