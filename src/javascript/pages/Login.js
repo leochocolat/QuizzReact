@@ -16,8 +16,8 @@ const Login = () => {
         <section className="page-login">
           <form onSubmit={() => dispatch({type: 'setUsername', value})}>
               <label className="page-login__label">
-              Enter username to begin
-              <input className="page-login__input" type="text" placeholder='username' value={value} onChange={(e) => handleChange(e)} />
+                Entre ton pseudo
+              <input className="page-login__input" type="text" placeholder='ici' value={value} onChange={(e) => handleChange(e)} />
               </label>
           </form>
         </section>

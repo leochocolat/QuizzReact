@@ -16,7 +16,7 @@ const Home = () => {
     <Context.Consumer>
         {({state}) => (
           <section className="js-scroll-container">
-            <div className="page-home__username" data-scroll data-scroll-sticky data-scroll-target=".js-scroll-container">Hello {state.username}</div>
+            <div className="page-home__username" data-scroll data-scroll-sticky data-scroll-target=".js-scroll-container">Bonjour {state.username}</div>
             {state.themeList.map((theme, index) => <ThemeSectionComponent key={index} {...theme} />)}
             <CursorComponent />
           </section>

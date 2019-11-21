@@ -53,7 +53,7 @@ class CursorComponent extends React.Component {
         return (
             <div className="cursor-container" data-scroll data-scroll-sticky data-scroll-target=".js-scroll-container">
                 <div className="cursor" style={style}>
-                    Play
+                    Jouer
                 </div>
             </div>
         )
