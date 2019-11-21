@@ -22,6 +22,7 @@ const Quizz = (props) => {
   const [allowRedirect, setAllowRedirect] = React.useState(false);
 
   const currentTheme = context.state.currentTheme;
+  const currentThemeQuestion = context.state.currentThemeQuestions;
   const difficulty = context.state.difficulty;
 
   let interval;
@@ -40,8 +41,6 @@ const Quizz = (props) => {
   }
 
   useEffect(() => {
-    clearInterval(interval);
-    setPoints([]);
     if (!context.state.difficulty) return;
     context.dispatch({type: 'getCurrentTheme', id})
     context.dispatch({type: 'getCurrentThemeQuestions', id})
@@ -57,24 +56,26 @@ const Quizz = (props) => {
   }, [duration]);
 
   useEffect(() => {
-    if (points.length !== 10) return
-    context.dispatch({type: 'setScore', id, points})
+    if (points.length !== 10) return;
+    context.dispatch({type: 'setScore', id, points});
+    clearInterval(interval);
+    setPoints([]);
     setAllowRedirect(true);
   }, [points.length]);
 
   const verifyResponse = (response) => {
-    if (response === context.state.currentThemeQuestions.quizz[difficulty][questionId].réponse) {
+    if (response === currentThemeQuestion.quizz[difficulty][questionId].réponse) {
       setPoints(points => { points.push(1); return points });
     } else {
       setPoints(points => { points.push(0); return points });
     }
-}
+  }
 
   const nextQuestion = () => {
     setDuration(0);
     timeModule.restart();
 
-    if (currentTheme && questionId >= context.state.currentThemeQuestions.quizz[difficulty].length - 1) return;
+    if (currentTheme && questionId >= currentThemeQuestion.quizz[difficulty].length - 1) return;
     setQuestionId(questionId => questionId + 1);
   }
 
@@ -89,19 +90,19 @@ const Quizz = (props) => {
       {context.state.difficulty ? (
         <React.Fragment>
           <header className="header-quizz" style={currentTheme && style}>
-            <h1 className="header-quizz__heading">Question {context.state.currentThemeQuestions && context.state.currentThemeQuestions.quizz[difficulty][questionId].id}</h1>
+            <h1 className="header-quizz__heading">Question {currentThemeQuestion && currentThemeQuestion.quizz[difficulty][questionId].id}</h1>
           </header>
           <section className="section-question">
             <div className="section-question__timer js-timer">{duration}</div>
             <h2 className="section-question__subheading">{currentTheme && currentTheme.title}</h2>
             <div className="section-question__question">
-              <p>{context.state.currentThemeQuestions && context.state.currentThemeQuestions.quizz[difficulty][questionId].question}</p>
+              <p>{currentThemeQuestion && currentThemeQuestion.quizz[difficulty][questionId].question}</p>
             </div>
             <ul className="section-question__list-response">
-              {context.state.currentThemeQuestions && context.state.currentThemeQuestions.quizz[difficulty][questionId].propositions.map((response, index) => <li onClick={handleResponse} className="section-question__list-response-item" key={index}>{response}</li>)}
+              {currentThemeQuestion && currentThemeQuestion.quizz[difficulty][questionId].propositions.map((response, index) => <li onClick={handleResponse} className="section-question__list-response-item" key={index}>{response}</li>)}
             </ul>
             <div className="section-question__progress">
-              {context.state.currentThemeQuestions && context.state.currentThemeQuestions.quizz[difficulty][questionId].id}/10
+              {currentThemeQuestion && currentThemeQuestion.quizz[difficulty][questionId].id}/10
             </div>
             <NavLink to={`/`}>
               <button className="section-question__leave-button">Quitter</button>
