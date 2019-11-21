@@ -128,7 +128,7 @@
     ],
     "confirmé": [
       {
-        "id": 11,
+        "id": 1,
         "question": "Dans quel État s'est déroulé la quasi-totalité du tournage du premier 'Hunger Games' ?",
         "propositions": [
           "Vermont",
@@ -140,7 +140,7 @@
         "anecdote": "Hunger Games est une tétralogie cinématographique de science-fiction réalisée par Gary Ross puis Francis Lawrence."
       },
       {
-        "id": 12,
+        "id": 2,
         "question": "Quelles baies empoisonnées Peeta a-t-il cueilli sans le savoir pour le manger avec Katniss ?",
         "propositions": [
           "Ciguë",
@@ -152,7 +152,7 @@
         "anecdote": "Peeta est allé à l'école avec Katniss mais n'a jamais été assez courageux pour lui parler car il l'aime en secret."
       },
       {
-        "id": 13,
+        "id": 3,
         "question": "Quel acteur joue le rôle de Caesar Flickerman dans la saga 'Hunger Games' ?",
         "propositions": [
           "Donald Sutherland",
@@ -164,7 +164,7 @@
         "anecdote": "Caesar Flickerman est le présentateur des interviews des tributs lors des Hunger Games."
       },
       {
-        "id": 14,
+        "id": 4,
         "question": "À quelle heure l'arbre est-il frappé par la foudre dans l'arène de 'Hunger Games' ?",
         "propositions": [
           "1h00",
@@ -176,7 +176,7 @@
         "anecdote": "Johanna et Katniss ont déroulé un fil métallique relié à l'arbre pour électriser la mer située au centre de l'arène."
       },
       {
-        "id": 15,
+        "id": 5,
         "question": "Qui tire presque sur Gale au début du film 'L'Embrasement' ?",
         "propositions": [
           "Peeta",
@@ -188,7 +188,7 @@
         "anecdote": "Gale Hawthorne est le meilleur ami de Katniss Everdeen et son partenaire de chasse."
       },
       {
-        "id": 16,
+        "id": 6,
         "question": "De quoi meurent habituellement une partie des tributs dans 'Hunger Games' ?",
         "propositions": [
           "Déshydratation",
@@ -200,7 +200,7 @@
         "anecdote": "Les enfants du Capitole ne sont jamais tirés au sort pour les Hunger Games, car seuls les districts doivent fournir les tributs."
       },
       {
-        "id": 17,
+        "id": 7,
         "question": "Qui est le nouveau chef des pacificateurs du District 12 dans 'L'Embrasement' ?",
         "propositions": [
           "Romulus Thread",
@@ -212,7 +212,7 @@
         "anecdote": "Thread est connu pour être le Pacificateur le plus méchant et le plus dévoué au Capitole du district."
       },
       {
-        "id": 18,
+        "id": 8,
         "question": "Quelle coiffure Prim a-t-elle arborée lors de la moisson ?",
         "propositions": [
           "Des couettes",
@@ -224,7 +224,7 @@
         "anecdote": "Prim a les yeux bleus et les cheveux blonds, à la différence de la plupart de la population de la Veine."
       },
       {
-        "id": 19,
+        "id": 9,
         "question": "Quel est le métier du père de Peeta, personnage très droit, juste et sincère de la saga 'Hunger Games' ?",
         "propositions": [
           "Coiffeur",
@@ -236,7 +236,7 @@
         "anecdote": "Son père était gentil mais sa mère, connue en tant que « sorcière », était réputée pour battre Peeta."
       },
       {
-        "id": 20,
+        "id": 10,
         "question": "Qui joue le rôle de Cato dans la saga 'Hunger Games' ?",
         "propositions": [
           "Josh Hutcherson",
@@ -250,7 +250,7 @@
     ],
     "expert": [
       {
-        "id": 21,
+        "id": 1,
         "question": "Quel est le nom de famille de Haymitch, ancien gagnant de la seconde Expiation ?",
         "propositions": [
           "Mellark",
@@ -262,7 +262,7 @@
         "anecdote": "Depuis sa victoire, Haymitch vit de façon aisée dans sa maison située dans le Village des Vainqueurs."
       },
       {
-        "id": 22,
+        "id": 2,
         "question": "Quel âge a Katniss au début de la saga 'Hunger Games' ?",
         "propositions": [
           "14 ans",
@@ -274,7 +274,7 @@
         "anecdote": "Le personnage de Katniss est interprété par Jennifer Lawrence dans son adaptation cinématographique."
       },
       {
-        "id": 23,
+        "id": 3,
         "question": "Que dit Peeta la première fois qu'il découvre le Capitole de ses propres yeux ?",
         "propositions": [
           "C'est fabuleux",
@@ -286,7 +286,7 @@
         "anecdote": "Le Capitole de Panem est une ville technologiquement avancée où vivent les personnes les plus riches et les puissantes de la nation."
       },
       {
-        "id": 24,
+        "id": 4,
         "question": "Quel objet a causé la blessure à la jambe de Peeta dans la première partie ?",
         "propositions": [
           "Une bougie",
@@ -298,7 +298,7 @@
         "anecdote": "Peeta ayant sauvé Katniss d'une tentative d'assassinat de Cato, ce dernier se vengea en lui plantant son épée dans la jambe."
       },
       {
-        "id": 25,
+        "id": 5,
         "question": "Quel camouflage Peeta a-t-il dessiné sur sa main au centre d'entraînement ?",
         "propositions": [
           "Une écorce",
@@ -310,7 +310,7 @@
         "anecdote": "Peeta est extrêmement doué pour le camouflage car il décorait les gâteaux à la boulangerie."
       },
       {
-        "id": 26,
+        "id": 6,
         "question": "Qui aide Katniss à se débarrasser des fournitures des Carrières ?",
         "propositions": [
           "Thresh",
@@ -322,7 +322,7 @@
         "anecdote": "Rue Barnette est décrite dans le livre comme ayant la peau brune et les cheveux noirs."
       },
       {
-        "id": 27,
+        "id": 7,
         "question": "Dans le premier 'Hunger Games', quel acteur joue le rôle du tribut mâle du District 11 ?",
         "propositions": [
           "Rupert Grint",
@@ -334,7 +334,7 @@
         "anecdote": "Fort et plein de ressources, Tresh s'est vite imposé comme l'un des adversaires principaux des autres tributs."
       },
       {
-        "id": 28,
+        "id": 8,
         "question": "De combien de notes se compose l'appel au geai moqueur de Rue ?",
         "propositions": [
           "6",
@@ -346,7 +346,7 @@
         "anecdote": "Exclusivement mâle, le geai moqueur regagne toujours son gîte à la manière d'un pigeon voyageur."
       },
       {
-        "id": 29,
+        "id": 9,
         "question": "Quelle note a obtenu Marvel, le garçon du District 1, après son évaluation ?",
         "propositions": [
           "11",
@@ -358,7 +358,7 @@
         "anecdote": "Marvel sera tué par Katniss qui lui tire une flèche dans le cou après qu'il ait tué Rue."
       },
       {
-        "id": 30,
+        "id": 10,
         "question": "Dans 'Hunger Games', de quel district vient Finnick Odair ?",
         "propositions": [
           "District 12",

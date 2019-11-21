@@ -128,7 +128,7 @@
     ],
     "confirmé": [
       {
-        "id": 11,
+        "id": 1,
         "question": "Comment se prénomme la petite amie de Malcom dans 'Le Monde Perdu' ?",
         "propositions": [
           "Sarah",
@@ -140,7 +140,7 @@
         "anecdote": "Dans le roman, Sarah Harding et Malcolm sont de simples amis. Dans le film, ils sont en couple."
       },
       {
-        "id": 12,
+        "id": 2,
         "question": "Quel professeur est un spécialiste de la théorie du chaos dans la saga 'Jurassic Park' ?",
         "propositions": [
           "Brandt",
@@ -152,7 +152,7 @@
         "anecdote": "Grand amateur de dinosaures, Jeff Goldblum a rencontré James Gleick et Ivar Ekeland pour discuter de la théorie du chaos."
       },
       {
-        "id": 13,
+        "id": 3,
         "question": "À quelle espèce appartient le bébé dinosaure à la patte cassée dans 'Le Monde Perdu' ?",
         "propositions": [
           "Tyrannosaure",
@@ -164,7 +164,7 @@
         "anecdote": "50 cascadeurs ont travaillé sur ce film alors que seulement 13 avaient été utilisés dans le premier film."
       },
       {
-        "id": 14,
+        "id": 4,
         "question": "Qui est l'auteur du roman 'Jurassic Park' dont s'est inspiré le film éponyme ?",
         "propositions": [
           "Stephen King",
@@ -176,7 +176,7 @@
         "anecdote": "Le film reprend l'idée de base du roman tout en apportant des modifications significatives aux personnages et aux péripéties."
       },
       {
-        "id": 15,
+        "id": 5,
         "question": "Quelle est la spécialité du docteur Alan Grant dans 'Jurassic Park' ?",
         "propositions": [
           "Paléontologue",
@@ -188,7 +188,7 @@
         "anecdote": "Alan Grant est un paléontologue qui n'aime pas grand chose : ni les enfants, ni les machines, et grimper aux arbres lui fait horreur."
       },
       {
-        "id": 16,
+        "id": 6,
         "question": "Combien d'Oscars le film 'Jurassic Park' a-t-il remporté ?",
         "propositions": [
           "Trois",
@@ -200,7 +200,7 @@
         "anecdote": "Les Oscars remportés sont : Oscar des meilleurs effets visuels, Oscar du meilleur son, Oscar du meilleur mixage de son."
       },
       {
-        "id": 17,
+        "id": 7,
         "question": "Sur quelle île se déroule l'action du film 'Jurassic World' ?",
         "propositions": [
           "Isla Maya",
@@ -212,7 +212,7 @@
         "anecdote": "Pour <i>Mad Movies</i>, Jurassic World est la meilleure des suites du premier film, utilisant l'humour comme dans le premier opus."
       },
       {
-        "id": 18,
+        "id": 8,
         "question": "Qui a racheté la société de biotechnologie InGen dans le film 'Jurassic World' ?",
         "propositions": [
           "Simon Masrani",
@@ -224,7 +224,7 @@
         "anecdote": "C'est l'acteur indien Irfan Khan, de son vrai nom Sahabzade Irrfan Ali Khan, qui interprète le rôle du milliardaire propriétaire du parc."
       },
       {
-        "id": 19,
+        "id": 9,
         "question": "Quel acteur de 'Jurassic Park' est devenu papa en 2015 à l'âge de 62 ans ?",
         "propositions": [
           "Bob Peck",
@@ -236,7 +236,7 @@
         "anecdote": "En plus d'être acteur, Jeff Goldblum est aussi pianiste de jazz amateur et donne occasionnellement des cours d'art dramatique."
       },
       {
-        "id": 20,
+        "id": 10,
         "question": "Qui sont Alexis et Timothy pour John Hammond dans le film 'Jurassic Park' ?",
         "propositions": [
           "Ses filleuls",
@@ -250,7 +250,7 @@
     ],
     "expert": [
       {
-        "id": 21,
+        "id": 1,
         "question": "Quel acteur interpète Ray Arnold dans le premier volet de la saga 'Jurassic Park' ?",
         "propositions": [
           "Sam Neill",
@@ -262,7 +262,7 @@
         "anecdote": "En 2011, il entre dans le <i>Livre Guinness des records</i> en tant qu'acteur ayant apporté le plus de recettes au box-office mondial."
       },
       {
-        "id": 22,
+        "id": 2,
         "question": "Comment se prénomme la fille de Malcom dans la saga 'Jurassic Park' ?",
         "propositions": [
           "Sandy",
@@ -274,7 +274,7 @@
         "anecdote": "Son prénom vient de Kelly Curtis, une fille dans le second volet du livre, et sa couleur de peau est en fait une allusion à Arby Benton."
       },
       {
-        "id": 23,
+        "id": 3,
         "question": "Où a été construit, sur le continent, le nouveau parc du film 'Le Monde Perdu' ?",
         "propositions": [
           "Los Angeles",
@@ -286,7 +286,7 @@
         "anecdote": "Des quatre films de la série, il s'agit du deuxième ayant le plus de décès. Il y en a 10 dans l'île et 3 à San Diego."
       },
       {
-        "id": 24,
+        "id": 4,
         "question": "Qui est le premier à être dévoré par le T-Rex dans le 'Jurassic Park' de 1993 ?",
         "propositions": [
           "John Hammond",
@@ -298,7 +298,7 @@
         "anecdote": "Donald Gennaro, avocat des actionnaires d'InGen, était invité sur Jurassic Park pour s'assurer de l'investissement."
       },
       {
-        "id": 25,
+        "id": 5,
         "question": "Quel animal a été cloné par InGen pour concevoir le dinosaure dans 'Jurassic Park' ?",
         "propositions": [
           "Un lézard",
@@ -310,7 +310,7 @@
         "anecdote": "L'ADN des échantillons de labo a été mélangé avec celui d'une grenouille pour combler les séquences génétiques manquantes."
       },
       {
-        "id": 26,
+        "id": 6,
         "question": "Sur quelle île interdite au large du Costa Rica fut créé le parc du film 'Jurassic Park III' ?",
         "propositions": [
           "Isla Maya",
@@ -322,7 +322,7 @@
         "anecdote": "Cinq nouvelles espèces de dinosaures sont apparues : Spinosaurus, Ankylosaurus, Ceratosaurus, Corythosaurus, et Ptéranodon."
       },
       {
-        "id": 27,
+        "id": 7,
         "question": "Par quel dinosaure la première grande attaque est-elle menée dans 'Jurassic Park III' ?",
         "propositions": [
           "Brachiosaure",
@@ -334,7 +334,7 @@
         "anecdote": "Cet épisode a beaucoup souffert de la comparaison avec les précédents, notamment en raison de l'absence de Steven Spielberg."
       },
       {
-        "id": 28,
+        "id": 8,
         "question": "Quelle entreprise représente le concurrent direct d'InGen dans la saga 'Jurassic Park' ?",
         "propositions": [
           "BioGen",
@@ -346,7 +346,7 @@
         "anecdote": "Acheté par Biosyn, concurrent direct dInGen, Nedry a désactivé le système de sécurité du parc pour pouvoir voler des embryons."
       },
       {
-        "id": 29,
+        "id": 9,
         "question": "Combien de nouvelles espèces de dinosaures apparaissent dans le film 'Jurassic Park III' ?",
         "propositions": [
           "Quatre",
@@ -358,7 +358,7 @@
         "anecdote": "La musique du film 'Jurassic Park III' est composée par Don Davis et interprétée par le Hollywood Studio Orchestra."
       },
       {
-        "id": 30,
+        "id": 10,
         "question": "Qui est le seul acteur de 'Jurassic World' à être apparu dans un autre volet de la saga ?",
         "propositions": [
           "Jake Johnson",

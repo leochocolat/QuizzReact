@@ -9,8 +9,9 @@ import princessesDisney from '../../assets/data/princessesDisney';
 import starWars from '../../assets/data/starWars';
 
 export const initialState = {
-    username : null,
     themeList : themeData,
+    username : null,
+    difficulty : null,
     currentTheme : null,
     currentThemeQuestions : null,
     score : {}
@@ -19,7 +20,11 @@ export const initialState = {
 export const Reducer = (state, action) => {
     switch (action.type) {
         case 'setUsername':
-            return {...state, username : action.value}
+            return {...state, username : action.username}
+        case 'setDifficulty':
+            return {...state, difficulty : action.difficulty}
+        case 'resetDifficulty':
+                return {...state, difficulty : null}
         case 'getCurrentTheme':
             return {...state, currentTheme : state.themeList.find(theme => theme.id === action.id)}
         case 'getCurrentThemeQuestions':

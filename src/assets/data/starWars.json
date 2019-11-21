@@ -128,7 +128,7 @@
     ],
     "confirmé": [
       {
-        "id": 11,
+        "id": 1,
         "question": "Quel chancelier suprême est seigneur noir des Sith et homme politique dans la série 'Star Wars' ?",
         "propositions": [
           "Valorum",
@@ -140,7 +140,7 @@
         "anecdote": "Originaire de Naboo, Palpatine a été formé au côté obscur de la Force dès le plus jeune âge par son maître, Dark Plagueis."
       },
       {
-        "id": 12,
+        "id": 2,
         "question": "De qui Chewbacca, le plus célèbre des guerriers Wookie, est-il le co-pilote ?",
         "propositions": [
           "Obi-Wan Kenobi",
@@ -152,7 +152,7 @@
         "anecdote": "Chewbacca fait partie du noyau de rebelles qui ont restauré la liberté dans la galaxie."
       },
       {
-        "id": 13,
+        "id": 3,
         "question": "Que se passe-t-il lorsqu'Anakin Skywalker affronte le compte Dooku la première fois ?",
         "propositions": [
           "Il gagne le duel",
@@ -164,7 +164,7 @@
         "anecdote": "Dooku fut l'héritier d'une famille d'aristocrates et diplomates de Serenno à la fortune colossale."
       },
       {
-        "id": 14,
+        "id": 4,
         "question": "Parmi ces personnages de 'Star Wars', qui dirige le conseil des Jedi avec Yoda ?",
         "propositions": [
           "Qui Go Jin",
@@ -176,7 +176,7 @@
         "anecdote": "En plus de sa réputation de sage, Windu est considéré comme l'un des meilleurs combattants au sabre laser de l'Ordre Jedi."
       },
       {
-        "id": 15,
+        "id": 5,
         "question": "Quel maître Jedi d'Obi-Wan Kenobi sera finalement tué par Dark Maul ?",
         "propositions": [
           "Qui-Gon Jinn",
@@ -188,7 +188,7 @@
         "anecdote": "Le personnage est interprété par Liam Neeson et doublé par Samuel Labarthe en France."
       },
       {
-        "id": 16,
+        "id": 6,
         "question": "Quel apprenti Sith Obi-Wan va-t-il tuer en vengeant la mort de son maître ?",
         "propositions": [
           "Dark Sidious",
@@ -200,7 +200,7 @@
         "anecdote": "Le personnage de Dark Maul fut créé par l'illustrateur Iain Mccaig pour Industrial Light & Magic."
       },
       {
-        "id": 17,
+        "id": 7,
         "question": "Quel nom porte le vaisseau spatial du contrebandier Han Solo ?",
         "propositions": [
           "Anneau Solaire",
@@ -212,7 +212,7 @@
         "anecdote": "Le Faucon Millénium fut appelé 'Millenium Condor' dans la version française du premier épisode produit."
       },
       {
-        "id": 18,
+        "id": 8,
         "question": "Qui tue Boba Fett, redoutable chasseur de primes connu pour son adresse à traquer sa proie ?",
         "propositions": [
           "Han Solo",
@@ -224,7 +224,7 @@
         "anecdote": "On apprendra plus tard qu'il échappe à la digestion du Gerand Sarlacc et qu'il reviendra dans l'histoire."
       },
       {
-        "id": 19,
+        "id": 9,
         "question": "Sur quelle planète vit Anakin avant de partir rejoindre les Jedi ?",
         "propositions": [
           "Naboo",
@@ -236,7 +236,7 @@
         "anecdote": "Située dans la Bordure extérieure, cette planète désertique est le refuge des plus vils brigands de la galaxie."
       },
       {
-        "id": 20,
+        "id": 10,
         "question": "Quel célèbre chasseur de primes a été engagé par Dark Vador pour traquer Han Solo ?",
         "propositions": [
           "Han Solo",
@@ -250,7 +250,7 @@
     ],
     "expert": [
       {
-        "id": 21,
+        "id": 1,
         "question": "Une fois mesurée, quelle molécule permet de savoir si un individu peut être un Chevalier Jedi ?",
         "propositions": [
           "Chlori-Metica",
@@ -262,7 +262,7 @@
         "anecdote": "Dans la saga 'Star Wars', Anakin Skywalker se fait remarquer par son fort taux de midi-chloriens."
       },
       {
-        "id": 22,
+        "id": 2,
         "question": "Quel taux de cette molécule Anakin possède-t-il lorsque Qui-Gon l'analyse pour la première fois ?",
         "propositions": [
           "Plus de 5 000",
@@ -274,7 +274,7 @@
         "anecdote": "Ce taux de midi-­chloriens est de plus supérieur à celui de Yoda, pourtant reconnu comme Grand Maître des Jedi."
       },
       {
-        "id": 23,
+        "id": 3,
         "question": "Quel mystique de la connaissance est le maître de Dark Sidious ?",
         "propositions": [
           "Dark Vador",
@@ -286,7 +286,7 @@
         "anecdote": "Seigneur Noir des Sith, il possédait un pouvoir inimaginable qui lui permettait de garder les gens en vie avec la Force."
       },
       {
-        "id": 24,
+        "id": 4,
         "question": "Lesquels de ces épisodes de 'Star Wars' n'ont pas été réalisés par George Lucas ?",
         "propositions": [
           "3 et 4",
@@ -298,7 +298,7 @@
         "anecdote": "Même s'il ne les a pas réalisés, George Luas a donné de très nombreuses directives à Irvin Kerschner et Richard Marquand."
       },
       {
-        "id": 25,
+        "id": 5,
         "question": "À partir de quelle bataille peut-on mesurer la chronologie dans 'Star Wars' ?",
         "propositions": [
           "Bataille de Jaku",
@@ -310,7 +310,7 @@
         "anecdote": "La bataille de Yavin oppose l'Empire galactique aux Rebelles autour de la planète gazeuse Yavin."
       },
       {
-        "id": 26,
+        "id": 6,
         "question": "Que signifie la dernière phrase de Dark Vador avant de mourir : « Tu l'as déjà fait Luke » ?",
         "propositions": [
           "L'avoir trahi",
@@ -322,7 +322,7 @@
         "anecdote": "Le fait que Dark Vador soit le père des jumeaux Luke Skywalker et Leia Organa constitue l'intrigue principale de la saga."
       },
       {
-        "id": 27,
+        "id": 7,
         "question": "Contre qui Han Solo remporte-t-il le Faucon Millénium lors d'une partie de sabacc ?",
         "propositions": [
           "Watto",
@@ -334,7 +334,7 @@
         "anecdote": "Lando Calrissian est devenu par la suite administrateur de la cité des Nuages, une colonie minière."
       },
       {
-        "id": 28,
+        "id": 8,
         "question": "Sur quelle planète Luke est-il parti pour apprendre à devenir un véritable Jedi ?",
         "propositions": [
           "Malastare",
@@ -346,7 +346,7 @@
         "anecdote": "Dagobah, dans le secteur Sluis, est un monde de sombres marais, de bayous putrides et de forêts d'arbres tortueux."
       },
       {
-        "id": 29,
+        "id": 9,
         "question": "Dans 'Star Wars', de George Lucas, qui tue le chancelier Palpatine alias Dark Sidious ?",
         "propositions": [
           "La princesse Leia",
@@ -358,7 +358,7 @@
         "anecdote": "Le règne de Palpatine s'achève dans l'épisode VI, à la fin duquel il est tué par Anakin Skywalker en l'an 4 ap. BY."
       },
       {
-        "id": 30,
+        "id": 10,
         "question": "Combien d'années séparent le premier épisode sorti en salle de l'épisode 3 ?",
         "propositions": [
           "28 ans",

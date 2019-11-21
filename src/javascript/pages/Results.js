@@ -19,8 +19,8 @@ const Results = (props) => {
 
     useEffect(() => {
         context.dispatch({type: 'getCurrentTheme', id})
+        context.dispatch({type: 'resetDifficulty'})
         return () => context.dispatch({type: 'resetTheme'})
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [id])
 
     return (

@@ -128,7 +128,7 @@
       ],
       "confirmé": [
         {
-          "id": 11,
+          "id": 1,
           "question": "Quelle puissante forteresse se dresse sur une colline de Port-Réal dans 'Game of Thrones' ?",
           "propositions": [
             "Le Donjon Rouge",
@@ -140,7 +140,7 @@
           "anecdote": "Les constructeurs et architectes de la forteresse furent mis à mort afin d'en préserver les secrets."
         },
         {
-          "id": 12,
+          "id": 2,
           "question": "Depuis 2011, pour quel rôle Peter Dinklage est-il principalement connu ?",
           "propositions": [
             "Tyrion Lannister",
@@ -152,7 +152,7 @@
           "anecdote": "Peter Dinklage est aussi l'antagoniste principal, Bolivar Trask, dans 'X-Men: Days of Future Past'."
         },
         {
-          "id": 13,
+          "id": 3,
           "question": "Comment est surnommé Sandor Clegane dans la série 'Game of Thrones' ?",
           "propositions": [
             "Le brûlé",
@@ -164,7 +164,7 @@
           "anecdote": "Au début de la saga, Sandor Clegane est le garde du corps du prince Joffrey Baratheon."
         },
         {
-          "id": 14,
+          "id": 4,
           "question": "Comment le prince Joffrey a-t-il baptisé son épée dans 'Game of Thrones' ?",
           "propositions": [
             "Dent-de-Lion",
@@ -176,7 +176,7 @@
           "anecdote": "Âgé de 12 ans au début de la saga, il est, sous des manières policées, cruel et vaniteux."
         },
         {
-          "id": 15,
+          "id": 5,
           "question": "Dans 'Game of Thrones', quel est le principal château du Mur depuis l'abandon de Fort Nox ?",
           "propositions": [
             "Tour Ombreuse",
@@ -188,7 +188,7 @@
           "anecdote": "La Garde de Nuit est chargée de la défense de la frontière Nord des Sept Couronnes, et en particulier du Mur."
         },
         {
-          "id": 16,
+          "id": 6,
           "question": "Dans 'Game of Thrones', pendant son coma, quel animal chuchote à Bran de voler ?",
           "propositions": [
             "Une corneille",
@@ -200,7 +200,7 @@
           "anecdote": "Brandon est un enfant de sept ans, au début de la saga, qui rêve de devenir un jour un grand chevalier et d'intégrer la Garde Royale."
         },
         {
-          "id": 17,
+          "id": 7,
           "question": "Quelle est la couleur des vêtements des hommes de la Garde de Nuit dans 'Game of Thrones' ?",
           "propositions": [
             "Rouge",
@@ -212,7 +212,7 @@
           "anecdote": "L'acier des mailles et des armures de cette organisation militaire est lui aussi noirci."
         },
         {
-          "id": 18,
+          "id": 8,
           "question": "Qui est surnommée la « Reine des Épines » dans la série 'Game of Thrones' ?",
           "propositions": [
             "Olenna Tyrell",
@@ -224,7 +224,7 @@
           "anecdote": "Olenna Tyrell, née Olenna Redwyne, est surnommée la Reine des Épines en raison de son caractère des plus piquants."
         },
         {
-          "id": 19,
+          "id": 9,
           "question": "Combien d'Immaculés Daenerys décide-t-elle d'acheter dans 'Game of Thrones' ?",
           "propositions": [
             "20 000",
@@ -236,7 +236,7 @@
           "anecdote": "Dans 'Game of Thrones', le commerce des Immaculés est réservé aux huit familles les plus riches de la ville."
         },
         {
-          "id": 20,
+          "id": 10,
           "question": "À quoi reconnaît-on la force d'un Dothraki dans la saga 'Game of Thrones' ?",
           "propositions": [
             "Ses cicatrices",
@@ -250,7 +250,7 @@
       ],
       "expert": [
         {
-          "id": 21,
+          "id": 1,
           "question": "Quel titre possède Benjen Stark, l'oncle de Jon Snow dans la série 'Game of Thrones' ?",
           "propositions": [
             "Premier Ingénieur",
@@ -262,7 +262,7 @@
           "anecdote": "Le visage aux traits ravinés et burinés de Benjen Stark contraste avec son regard gris-bleu rieur."
         },
         {
-          "id": 22,
+          "id": 2,
           "question": "Quelle épée Jon offre-t-il à Arya dans la série télévisée 'Game of Thrones' ?",
           "propositions": [
             "Dard",
@@ -274,7 +274,7 @@
           "anecdote": "Aiguille est une épée de spadassin en acier château à la lame bleue-noire forgée par Mikken le forgeron de Winterfell."
         },
         {
-          "id": 23,
+          "id": 3,
           "question": "Comment se nomme le loup de Bran, fils cadet de Catelyn dans 'Game of Thrones' ?",
           "propositions": [
             "Fantôme",
@@ -286,7 +286,7 @@
           "anecdote": "Une pâte de germe de Barral a donné à Bran la capacité de se glisser et de voir à travers les yeux des arbres."
         },
         {
-          "id": 24,
+          "id": 4,
           "question": "Dans 'Game of Thrones', qui assassine Willem Lannister et Tion Frey dans leur cachot ?",
           "propositions": [
             "Richard Karstark",
@@ -298,7 +298,7 @@
           "anecdote": "Le mutisme de Lord Rickard Karstark est souvent synonyme de grande défiance et de colère contenue."
         },
         {
-          "id": 25,
+          "id": 5,
           "question": "Quel loup-garou surgit pour défendre Arya dans la saison 4 de 'Game of Thrones' ?",
           "propositions": [
             "Vent Gris",
@@ -310,7 +310,7 @@
           "anecdote": "Arya est une jeune fille d'une dizaine d'années qui préfère l'escrime et l'équitation à la couture."
         },
         {
-          "id": 26,
+          "id": 6,
           "question": "Quelle servante apprend à Daenerys l'art féminin de l'amour dans la série 'Game of Thrones' ?",
           "propositions": [
             "Mysaria",
@@ -322,7 +322,7 @@
           "anecdote": "Roxanne McKee est l'actrice britannique incarnant le personnage de Doreah dans 'Game of Thrones'."
         },
         {
-          "id": 27,
+          "id": 7,
           "question": "Dans 'Game of Thrones', qui retrouve Mycah et le tue en le tranchant quasiment en deux ?",
           "propositions": [
             "Jorah Mormont",
@@ -334,7 +334,7 @@
           "anecdote": "Né en l'an 285, Mycah est un garçon boucher, compagnon de jeu d'Arya Stark."
         },
         {
-          "id": 28,
+          "id": 8,
           "question": "Qui est Craster dans la saga 'Game of Thrones' ?",
           "propositions": [
             "Un roi",
@@ -346,7 +346,7 @@
           "anecdote": "Vivant au-delà du Mur, il lui manque une oreille et sa dentition est pourrie."
         },
         {
-          "id": 29,
+          "id": 9,
           "question": "Qui tue Lord Jeor Mormont lors d'une mutinerie dans la série 'Game of Thrones' ?",
           "propositions": [
             "Samwell Tarly",
@@ -358,7 +358,7 @@
           "anecdote": "Jeor Mormont, surnommé le « Vieil Ours », est le Lord Commandant des combattants ayant juré de défendre le Mur."
         },
         {
-          "id": 30,
+          "id": 10,
           "question": "Dans 'Game of Thrones', qui ramène à chaque fois à la vie Béric Dondarrion grâce à la magie ?",
           "propositions": [
             "Mélisandre",

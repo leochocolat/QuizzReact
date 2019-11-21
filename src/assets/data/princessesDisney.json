@@ -128,7 +128,7 @@
     ],
     "confirmé": [
       {
-        "id": 11,
+        "id": 1,
         "question": "Quelle couleur est souvent associée à Aurore dans 'La Belle au bois dormant' ?",
         "propositions": [
           "Rose",
@@ -140,7 +140,7 @@
         "anecdote": "Le célèbre château de la princesse Aurore est utilisé dans les parcs de Disneyland comme icône de la zone Fantasyland."
       },
       {
-        "id": 12,
+        "id": 2,
         "question": "Quelles aventures de Disney se déroulent dans le nord de la Chine ?",
         "propositions": [
           "Pocahontas",
@@ -152,7 +152,7 @@
         "anecdote": "Le caractère du personnage de Mulan est différent des classiques Disney, notamment de celui des princesses."
       },
       {
-        "id": 13,
+        "id": 3,
         "question": "Quelle princesse Disney est une sirène vivant auprès de son père, le roi Triton ?",
         "propositions": [
           "Merida",
@@ -164,7 +164,7 @@
         "anecdote": "L'animateur Glen Keane aurait déclaré dans une conférence que l'apparence du personnage était fondée sur sa propre femme."
       },
       {
-        "id": 14,
+        "id": 4,
         "question": "Dans le monde de Disney, quelle princesse chante 'Ce rêve bleu' ?",
         "propositions": [
           "Merida",
@@ -176,7 +176,7 @@
         "anecdote": "Jasmine est un personnage de fiction qui est apparu pour la première fois en 1992 dans le long métrage d'animation 'Aladdin'."
       },
       {
-        "id": 15,
+        "id": 5,
         "question": "Quelle princesse de Disney est célèbre pour sa longue chevelure blonde ?",
         "propositions": [
           "Tiana",
@@ -188,7 +188,7 @@
         "anecdote": "Si on coupe une mèche de cheveux de Raiponce, ceux-ci deviennent bruns et perdent leurs effets magiques."
       },
       {
-        "id": 16,
+        "id": 6,
         "question": "Quel film de Disney a réuni sur les écrans un pauvre voleur et une belle princesse ?",
         "propositions": [
           "Aladdin",
@@ -200,7 +200,7 @@
         "anecdote": "L'apparence de Jasmine fut inspirée de Jennifer Connelly mais également de la sur de l'animateur du personnage."
       },
       {
-        "id": 17,
+        "id": 7,
         "question": "Qui a fabriqué la première robe de bal qu'a portée Cendrillon ?",
         "propositions": [
           "Des enfants",
@@ -212,7 +212,7 @@
         "anecdote": "Cendrillon est appelée ainsi car elle se repose dans la cendre une fois le travail terminé."
       },
       {
-        "id": 18,
+        "id": 8,
         "question": "Qui est Meeko dans 'Pocahontas, une légende indienne' ?",
         "propositions": [
           "Un ours",
@@ -224,7 +224,7 @@
         "anecdote": "Disney a donné à Pocahontas les traits et la plastique du mannequin planétaire Naomi Campbell."
       },
       {
-        "id": 19,
+        "id": 9,
         "question": "Quelle princesse Disney ne quitte pour ainsi dire jamais son arc et ses flèches ?",
         "propositions": [
           "Merida",
@@ -236,7 +236,7 @@
         "anecdote": "Merida est le personnage principal du long métrage d'animation 'Rebelle', sorti en 2012."
       },
       {
-        "id": 20,
+        "id": 10,
         "question": "Quelle première princesse afro-américaine a été mise en scène par Disney ?",
         "propositions": [
           "Tiana",
@@ -250,7 +250,7 @@
     ],
     "expert": [
       {
-        "id": 21,
+        "id": 1,
         "question": "Quelle princesse Disney est savamment entraînée aux arts martiaux ?",
         "propositions": [
           "Tiana",
@@ -262,7 +262,7 @@
         "anecdote": "Le courage, la détermination et l'ingéniosité de Mulan l'aideront dans ses aventures à gagner le respect des autres."
       },
       {
-        "id": 22,
+        "id": 2,
         "question": "Que recherchent les sept nains de Blanche-Neige dans leur mine ?",
         "propositions": [
           "Du schiste",
@@ -274,7 +274,7 @@
         "anecdote": "Dans le parc d'attractions Efteling, les nains vivent dans le Bois des contes, jouxtant le château de sa belle-mère."
       },
       {
-        "id": 23,
+        "id": 3,
         "question": "En 2037, quel âge aura le célèbre dessin animé 'Blanche-Neige' des studios Disney ?",
         "propositions": [
           "50 ans",
@@ -286,7 +286,7 @@
         "anecdote": "Le budget de production, 1.48 million de dollars, marque un record historique pour l'époque."
       },
       {
-        "id": 24,
+        "id": 4,
         "question": "Quel est le prénom du chat de la belle-mère de Cendrillon ?",
         "propositions": [
           "Diabolo",
@@ -298,7 +298,7 @@
         "anecdote": "Lucifer est le chat de Lady Trémaine : fourbe et paresseux, il représente une menace pour Jack."
       },
       {
-        "id": 25,
+        "id": 5,
         "question": "Dans 'Mulan', quel est le nom du dragon, le gardien de la famille ?",
         "propositions": [
           "General Li",
@@ -310,7 +310,7 @@
         "anecdote": "C'est Eddie Murphy qui campe la voix originale de Mushu, tandis que la voix française est assurée par José Garcia."
       },
       {
-        "id": 26,
+        "id": 6,
         "question": "Pour Disney, qui est Rajah, animal de compagnie de la princesse Jasmine ?",
         "propositions": [
           "Un sanglier",
@@ -322,7 +322,7 @@
         "anecdote": "Jasmine et Aladdin sont apparus en 2002 dans une bande-annonce du film 'Lilo & Stitch'."
       },
       {
-        "id": 27,
+        "id": 7,
         "question": "Dans 'Cendrillon', quels animaux sont soudainement transformés en chevaux de trait ?",
         "propositions": [
           "Des oies",
@@ -334,7 +334,7 @@
         "anecdote": "La composition des pantoufles de Cendrillon fait l'objet d'un débat récurrent en Europe."
       },
       {
-        "id": 28,
+        "id": 8,
         "question": "La plastique de quelle mannequin a servi à créer les principaux traits de Pocahontas ?",
         "propositions": [
           "Naomi Campbell",
@@ -346,7 +346,7 @@
         "anecdote": "Le personnage de Pocahontas s'inspire librement du personnage historique Matoaka (« Petite plume de neige »)."
       },
       {
-        "id": 29,
+        "id": 9,
         "question": "Quelle princesse Disney communique librement avec la nature et les animaux ?",
         "propositions": [
           "Merida",
@@ -358,7 +358,7 @@
         "anecdote": "Les scénaristes du film ont inventé une Pocahontas écologiste, volontaire et physiquement attirante."
       },
       {
-        "id": 30,
+        "id": 10,
         "question": "Laquelle de ces princesses est très souvent représentée dans sa robe de bal jaune or ?",
         "propositions": [
           "Merida",
