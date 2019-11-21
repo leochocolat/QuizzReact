@@ -5,6 +5,7 @@ import {Context} from './provider/Provider';
 const Home = lazy(() => import('./pages/Home'));
 const Quizz = lazy(() => import('./pages/Quizz'));
 const Login = lazy(() => import('./pages/Login'));
+const Results = lazy(() => import('./pages/Results'));
 
 const App = () => {
 
@@ -23,6 +24,7 @@ const App = () => {
             <Route exact path="/" component={Home}/>
             <Route exact path="/login" component={Login}/>
             <Route exact path="/quizz/:quizzId" component={Quizz}/>
+            <Route exact path="/quizz/:quizzId/results" component={Results}/>
           </Switch>
         </Suspense>
       </Router>
