@@ -12,7 +12,8 @@ export const initialState = {
     username : null,
     themeList : themeData,
     currentTheme : null,
-    currentThemeQuestions : null
+    currentThemeQuestions : null,
+    score : {}
 };
 
 export const Reducer = (state, action) => {
@@ -43,8 +44,10 @@ export const Reducer = (state, action) => {
                     console.log('Sorry, not founded');
             };
             break;
-        case 'reset':
+        case 'resetTheme':
             return {...state, currentTheme : null};
+        case 'setScore':
+            return {...state, score : action.points}
         default:
             return state;
     }

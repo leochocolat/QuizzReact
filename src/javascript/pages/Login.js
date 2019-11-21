@@ -5,7 +5,7 @@ const Login = () => {
 
   const [value, setValue] = React.useState('');
 
-  function handleChange(e) {
+  const handleChange = (e) => {
     e.preventDefault();
     setValue(e.target.value)
   }

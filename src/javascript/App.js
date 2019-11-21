@@ -12,7 +12,7 @@ const App = () => {
     <Context.Consumer>
       {({state}) => (
         <Router>
-        <Suspense fallback={<div>Chargement...</div>}>
+        <Suspense fallback={<div style={{width:'100vw', height:'100vh', display:'flex', justifyContent:'center', alignItems:'center'}}>Chargement...</div>}>
           <Switch>
             <Route exact path="/">
                 {state.username === null ?  <Redirect to="/login" /> : <Home />}
@@ -29,7 +29,7 @@ const App = () => {
       )}
       
     </Context.Consumer>
-)
+  )
 };
 
 export default App;

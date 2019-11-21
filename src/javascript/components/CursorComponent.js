@@ -19,25 +19,6 @@ class CursorComponent extends React.Component {
         this.setup();
     }
 
-    componentWillUnmount = () => {
-        this.removeEventListerners();
-    }
-
-    render() {
-        const style = {
-            transform: `translate(${this.state.mouseX}px, ${this.state.mouseY}px)`,
-            opacity: this.state.opacity
-        }
-            
-        return (
-            <div className="cursor-container" data-scroll data-scroll-sticky data-scroll-target=".js-scroll-container">
-                <div className="cursor" style={style}>
-                    Play
-                </div>
-            </div>
-        )
-    }
-
     setup() {
         this.setupEventListeners();
     }
@@ -57,6 +38,25 @@ class CursorComponent extends React.Component {
             mouseY: e.clientY,
             opacity: this.tweenObj.opacity
         });
+    }
+
+    componentWillUnmount = () => {
+        this.removeEventListerners();
+    }
+
+    render() {
+        const style = {
+            transform: `translate(${this.state.mouseX}px, ${this.state.mouseY}px)`,
+            opacity: this.state.opacity
+        }
+            
+        return (
+            <div className="cursor-container" data-scroll data-scroll-sticky data-scroll-target=".js-scroll-container">
+                <div className="cursor" style={style}>
+                    Play
+                </div>
+            </div>
+        )
     }
 }
 
