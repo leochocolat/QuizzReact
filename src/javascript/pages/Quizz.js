@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Redirect } from 'react-router-dom';
 import ThemeContext from '../provider/ThemeContext';
 import ScoreContext from '../provider/ScoreContext';
 
@@ -18,7 +18,8 @@ const Quizz = (props) => {
 
   const [questionId, setQuestionId] = React.useState(0);
   let [duration, setDuration] = React.useState(0);
-  const [points, setPoints] = React.useState([]);
+  let [points, setPoints] = React.useState([]);
+  let [allowRedirect, setAllowRedirect] = React.useState(false);
   const theme = context.getTheme(id);
 
   const style = {
@@ -37,7 +38,14 @@ const Quizz = (props) => {
       verifyResponse('');
       nextQuestion();
     }
-  }, [duration])
+  }, [duration]);
+
+  useEffect(() => {
+    if (points.length === 10) {
+      scoreContext.setScore(id, points);
+      setAllowRedirect(true);
+    }
+  }, [points.length])
 
   function updateTime() {
     setInterval(() => {
@@ -49,7 +57,7 @@ const Quizz = (props) => {
     setDuration(0);
     timeModule.restart();
     if (context.json && questionId >= context.json.quizz.débutant.length - 1) {
-      scoreContext.setScore(id, points);
+      
     } else {
       setQuestionId(questionId => questionId + 1);
     };
@@ -67,7 +75,6 @@ const Quizz = (props) => {
       setPoints(points => { points.push(0); return points });
     }
   }
-
 
   return (
     <section className="page-quizz">
@@ -89,6 +96,7 @@ const Quizz = (props) => {
         
         <NavLink to='/' className="section-question__leave-button">Quitter</NavLink>
       </section>
+      {allowRedirect && <Redirect to='/'/>}
     </section>
   )
 

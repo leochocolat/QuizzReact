@@ -15,7 +15,6 @@ export default class ScoreProvider extends React.Component {
     setScore(theme, points) {
         let scores = this.state.scores;
         scores[theme] = points;
-        console.log(scores);
     }
 
     render() {
