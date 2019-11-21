@@ -24,8 +24,6 @@ class ThemeSection extends React.Component {
             </NavLink>
         )
     }
-
-
 }
 
 export default ThemeSection;

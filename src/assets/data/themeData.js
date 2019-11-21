@@ -1,4 +1,4 @@
-[
+export const themeData = [
     {
         "id": "0",
         "title": "Breaking Bad",
