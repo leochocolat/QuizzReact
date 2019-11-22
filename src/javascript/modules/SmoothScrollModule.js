@@ -3,9 +3,7 @@ import AnimTitleModule from './AnimTitleModule';
 import AnimBackgroundModule from './AnimBackgroundModule';
 
 class SmoothScrollModule {
-    constructor(el) {
-        this.el = el;
-
+    constructor() {
         this.ui = {
             animTitle: document.querySelectorAll('[data-scroll-call="anim-title"]'),
             animBackground: document.querySelectorAll('[data-scroll-call="anim-background"]'),
@@ -21,8 +19,8 @@ class SmoothScrollModule {
 
     setup() {
         this.setupComponents();
-        this.setupSmoothScroll();
-        this.setupEventListeners();
+        // this.setupSmoothScroll();
+        // this.setupEventListeners();
     }
 
     setupComponents() {
@@ -31,13 +29,14 @@ class SmoothScrollModule {
         }
     }
 
-    setupSmoothScroll() {
+    setupSmoothScroll(el) {
         this.scroll = new LocomotiveScroll({
-            el: this.el,
+            el: el,
             smooth: true,
             getDirection: true,
             getSpeed: true
         });
+        this.setupEventListeners();
     }
 
     setupEventListeners() {
