@@ -11,7 +11,7 @@ class CarouselModule {
     constructor(el) {
         this.el = el;
         this.images = [img1, img2, img3, img4, img5, img6, img7];
-        this.currentIndex = Math.ceil(Math.random() * this.images.length);
+        this.currentIndex = Math.floor(Math.random() * this.images.length);
         this.nextIndex = 1;
 
         this.setup();
@@ -25,7 +25,7 @@ class CarouselModule {
         // setInterval(() => {
         //     this.updateImage((this.currentIndex + 1) % this.images.length);
         //     this.setupZoomTween();
-        // }, 2000)
+        // }, 2000);
     }
 
     setupImage() {
